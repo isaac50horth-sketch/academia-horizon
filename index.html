@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Académie Horizon — Formations Premium</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .font-display { font-family: 'Playfair Display', serif; }
+    .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%); }
+    .gold { color: #d4af37; }
+    .gold-bg { background: linear-gradient(135deg, #d4af37, #f0d78c); }
+    .card-hover { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgba(212, 175, 55, 0.25); }
+    .btn-gold { background: linear-gradient(135deg, #d4af37, #f0d78c); color: #0f172a; font-weight: 700; }
+    .btn-gold:hover { background: linear-gradient(135deg, #f0d78c, #d4af37); transform: scale(1.02); }
+  </style>
+</head>
+<body class="gradient-bg text-white min-h-screen">
+  <nav class="border-b border-white/10 backdrop-blur-md sticky top-0 z-50 bg-slate-900/80">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="font-display text-2xl font-bold gold">Horizon</div>
+      <div class="hidden md:flex space-x-8 text-sm font-medium">
+        <a href="#formations" class="hover:gold transition">Formations</a>
+        <a href="#abonnement" class="hover:gold transition">Abonnement</a>
+        <a href="#temoignages" class="hover:gold transition">Résultats</a>
+      </div>
+      <a href="#abonnement" class="btn-gold px-5 py-2 rounded-full text-sm">Accès Illimité</a>
+    </div>
+  </nav>
+
+  <section class="relative overflow-hidden pt-20 pb-32">
+    <div class="absolute inset-0 opacity-20">
+      <div class="absolute top-20 left-10 w-96 h-96 bg-amber-500 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-10 right-10 w-80 h-80 bg-teal-500 rounded-full blur-3xl"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+      <div class="inline-block px-4 py-1 rounded-full border border-amber-500/30 text-amber-300 text-sm mb-6">Formations Premium · Résultats Concrets</div>
+      <h1 class="font-display text-5xl md:text-7xl font-bold leading-tight mb-6">
+        Maîtrisez les compétences<br>
+        <span class="gold">qui changent tout</span>
+      </h1>
+      <p class="text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+        Des formations professionnelles conçues pour transformer votre productivité, votre business et votre avenir. Contenu dense, actionnable, et à la hauteur du prix.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#formations" class="btn-gold px-8 py-4 rounded-full text-lg">Découvrir les formations</a>
+        <a href="#abonnement" class="border border-white/30 px-8 py-4 rounded-full text-lg hover:bg-white/10 transition">Essayer l'abonnement</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="formations" class="py-24 bg-slate-900/50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">Formations à fort impact</h2>
+        <p class="text-slate-400 text-lg">Chaque module est construit pour que vous obteniez des résultats rapides et mesurables.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div class="card-hover bg-slate-800/80 border border-white/10 rounded-3xl p-8 backdrop-blur">
+          <div class="w-full h-48 bg-gradient-to-br from-teal-900 to-slate-800 rounded-2xl mb-6 flex items-center justify-center">
+            <i class="fas fa-brain text-6xl text-teal-400/60"></i>
+          </div>
+          <div class="flex justify-between items-start mb-4">
+            <h3 class="font-display text-2xl font-bold">IA Maîtrise Totale</h3>
+            <span class="gold text-2xl font-bold">97€</span>
+          </div>
+          <p class="text-slate-300 mb-6">Passez de débutant à expert en intelligence artificielle. Automatisez 10h de travail par semaine et multipliez votre productivité.</p>
+          <ul class="space-y-2 text-sm text-slate-400 mb-8">
+            <li><i class="fas fa-check gold mr-2"></i> 6 modules complets + worksheets</li>
+            <li><i class="fas fa-check gold mr-2"></i> Prompts prêts à l'emploi</li>
+            <li><i class="fas fa-check gold mr-2"></i> Accès à vie + mises à jour</li>
+          </ul>
+          <a href="STRIPE_LINK_IA" class="btn-gold block text-center py-3 rounded-full">Acheter la formation</a>
+        </div>
+
+        <div class="card-hover bg-slate-800/80 border border-white/10 rounded-3xl p-8 backdrop-blur">
+          <div class="w-full h-48 bg-gradient-to-br from-amber-900 to-slate-800 rounded-2xl mb-6 flex items-center justify-center">
+            <i class="fas fa-chart-line text-6xl text-amber-400/60"></i>
+          </div>
+          <div class="flex justify-between items-start mb-4">
+            <h3 class="font-display text-2xl font-bold">Business Digital 6 Figures</h3>
+            <span class="gold text-2xl font-bold">197€</span>
+          </div>
+          <p class="text-slate-300 mb-6">Le système complet pour créer et scaler un business digital rentable. De l'idée aux premiers 10 000€ de revenus récurrents.</p>
+          <ul class="space-y-2 text-sm text-slate-400 mb-8">
+            <li><i class="fas fa-check gold mr-2"></i> 8 modules stratégiques</li>
+            <li><i class="fas fa-check gold mr-2"></i> Templates et frameworks exclusifs</li>
+            <li><i class="fas fa-check gold mr-2"></i> Plan d'action 90 jours</li>
+          </ul>
+          <a href="STRIPE_LINK_BUSINESS" class="btn-gold block text-center py-3 rounded-full">Acheter la formation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="abonnement" class="py-24">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <div class="inline-block px-4 py-1 rounded-full bg-amber-500/20 text-amber-300 text-sm mb-4">Revenus récurrents</div>
+      <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">Club Horizon — Accès Illimité</h2>
+      <p class="text-xl text-slate-300 mb-10">Toutes les formations actuelles et futures + communauté privée + sessions mensuelles. Le meilleur levier pour progresser en continu.</p>
+      
+      <div class="bg-slate-800/80 border border-amber-500/30 rounded-3xl p-10 max-w-md mx-auto">
+        <div class="text-5xl font-bold gold mb-2">29€<span class="text-2xl text-slate-400">/mois</span></div>
+        <p class="text-slate-400 mb-8">Annulable à tout moment</p>
+        <ul class="text-left space-y-3 mb-8 text-slate-300">
+          <li><i class="fas fa-infinity gold mr-3"></i> Accès à toutes les formations</li>
+          <li><i class="fas fa-plus gold mr-3"></i> Nouveaux modules chaque mois</li>
+          <li><i class="fas fa-users gold mr-3"></i> Communauté privée</li>
+          <li><i class="fas fa-video gold mr-3"></i> Sessions Q&A mensuelles</li>
+        </ul>
+        <a href="STRIPE_LINK_ABO" class="btn-gold block text-center py-4 rounded-full text-lg">Rejoindre le Club</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="temoignages" class="py-24 bg-slate-900/50">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="font-display text-4xl font-bold text-center mb-16">Ils ont transformé leurs résultats</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-slate-800/60 p-6 rounded-2xl border border-white/5">
+          <div class="flex text-amber-400 mb-3">★★★★★</div>
+          <p class="text-slate-300 mb-4">"La formation IA m'a fait gagner 12 heures par semaine. Le contenu est dense et immédiatement applicable. Je regrette de ne pas l'avoir achetée plus tôt."</p>
+          <p class="font-medium">Marie L. · Consultante</p>
+        </div>
+        <div class="bg-slate-800/60 p-6 rounded-2xl border border-white/5">
+          <div class="flex text-amber-400 mb-3">★★★★★</div>
+          <p class="text-slate-300 mb-4">"J'ai lancé mon offre digitale en 6 semaines grâce au Business 6 Figures. Premier client à 2 400€. Le système est clair et sans bullshit."</p>
+          <p class="font-medium">Thomas R. · Entrepreneur</p>
+        </div>
+        <div class="bg-slate-800/60 p-6 rounded-2xl border border-white/5">
+          <div class="flex text-amber-400 mb-3">★★★★★</div>
+          <p class="text-slate-300 mb-4">"L'abonnement vaut largement le prix. Chaque mois je reçois de la valeur réelle. C'est devenu mon outil de progression n°1."</p>
+          <p class="font-medium">Sophie M. · Coach</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-white/10 py-12 text-center text-slate-500 text-sm">
+    <p>© 2026 Académie Horizon. Tous droits réservés.</p>
+    <p class="mt-2">Paiements sécurisés par Stripe · Accès immédiat après achat</p>
+  </footer>
+</body>
+</html>
